@@ -76,6 +76,11 @@ body {
 @media all and (max-width:720px) {
  .App {
   width: 90vw;
+  .contenedorMeme {
+    img {
+      width: 100%;
+    }
+  }
  } 
 }
 

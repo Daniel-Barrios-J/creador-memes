@@ -78,6 +78,9 @@ body {
   .App {
     width: 90vw;
   }
+  .App .contenedorMeme img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
