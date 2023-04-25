@@ -1,6 +1,9 @@
 body {
   display: grid;
   place-items: center;
+  background-color: #0F3460;
+  width: 100vw;
+  height: 100vh;
 }
 
 .App {
@@ -8,53 +11,56 @@ body {
   place-items: center;
   padding: 10px;
   font-family: 'Anton', sans-serif;
-  width: 600px;
-  height: auto;
-  background-color: #5252FA;
-  margin: 10px;
-  border-radius: 50px;
+  width: 60vw;
+  height: 80%;
+  background-color: #16213E;
+  border-radius: 40px;
   h1 {
-    font-size: 50px;
+    font-size: 2.4em;
     color: yellow;
   }
   select {
     margin: 5px;
-    width: 200px;
+    width: 60%;
+    max-width: 350px;
     height: 35px;
     text-align: center;
-    font-size: 25px;
-    border-radius: 10px;
+    font-size: 1.6em;
+    border-radius: 8px;
   }
   input {
     margin: 10px;
-    width: 500px;
+    width: 80%;
+    max-width: 400px;
     height: 30px;
     text-align: center;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 1.2em;
+    border-radius: 8px;
     border: 1px solid gainsboro;
     outline: none;
   }
   .contenedorMeme {
-    width: 500px;
-    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-color: #16213E;
+    img {
+      width: 360px;
+    }
     label {
-      font-size: 35px;
-      font-weight: bolder;
-      color: white;
+      font-size: 1.6em;
+      letter-spacing: 0.4px;
+      color: whitesmoke;
       max-width: 450px;
       text-align: center;
     }
     .linea1 {
-      top: 30px;
+      top: 5%;
       position: absolute;
     }
     .linea2 {
-      bottom: 30px;
+      bottom: 5%;
       position: absolute;
     }
   }
@@ -66,5 +72,10 @@ body {
     font-size: 30px;
     border-radius: 10px;
   }
+}
+@media all and (max-width:720px) {
+ .App {
+  width: 90vw;
+ } 
 }
 
