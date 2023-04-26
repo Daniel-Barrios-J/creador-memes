@@ -72,6 +72,17 @@ body {
     font-size: 30px;
     border-radius: 10px;
   }
+  .repo-container {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 12px;
+    a {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: smaller;
+      color: azure;
+    }
+  }
 }
 @media all and (max-width:720px) {
  .App {

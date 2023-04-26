@@ -26,8 +26,8 @@ function App() {
   const onclickExport = () => {
     html2canvas(document.getElementById('contenedorMeme')).then(canvas => { 
       let link = document.createElement('a');
-      link.href = canvas.toDataURL();
       link.download = `meme.png`;
+      link.href = canvas.toDataURL();
       link.click();
   }).catch(err => console.error('error al generar la imagen',err))
   }   
@@ -42,12 +42,18 @@ function App() {
       </select>
       <input type='text' placeholder='Texto superior' onChange={onChangelinea1}></input> 
       <div className='contenedorMeme' id='contenedorMeme'>
+        <img src={imagen} alt={imagen} />
         <label className='linea1'>{linea1}</label> 
         <label className='linea2'>{linea2}</label> 
-        <img src={imagen} alt={imagen} /> 
       </div>
       <input type='text' placeholder='Texto inferior' onChange={onChangelinea2}></input>
       <button onClick={onclickExport}>Descargar</button>
+      <div className='repo-container'>
+        <a href="https://github.com/Daniel-Barrios-J/creador-memes" target='_blank'>
+          Go to the repo at GitHub
+        </a>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" width={'24px'} />
+      </div>
     </div>
   );
 }
