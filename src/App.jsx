@@ -49,7 +49,7 @@ function App() {
       <input type='text' placeholder='Texto inferior' onChange={onChangelinea2}></input>
       <button onClick={onclickExport}>Descargar</button>
       <div className='repo-container'>
-        <a href="https://github.com/Daniel-Barrios-J/creador-memes" target='_blank'>
+        <a href="https://github.com/Daniel-Barrios-J/creador-memes" target='_blank' rel='noreferrer'>
           Go to the repo at GitHub
         </a>
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github icon" width={'24px'} />
